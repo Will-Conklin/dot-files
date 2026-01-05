@@ -1,0 +1,40 @@
+{
+  "model": "sonnet",
+  "autoCommit": false,
+  "autoSummarization": true,
+  "maxContextTokens": 150000,
+  "hooks": {
+    "sessionStart": {
+      "enabled": false,
+      "command": ""
+    },
+    "userPromptSubmit": {
+      "enabled": false,
+      "command": ""
+    }
+  },
+  "tools": {
+    "bash": {
+      "enabled": true,
+      "timeout": 120000
+    },
+    "webSearch": {
+      "enabled": true
+    },
+    "webFetch": {
+      "enabled": true
+    }
+  },
+  "preferences": {
+    "verbosity": "normal",
+    "codeStyle": {
+      "preferredQuotes": "single",
+      "indentation": "spaces",
+      "indentSize": 2
+    },
+    "git": {
+      "autoStage": false,
+      "signCommits": false
+    }
+  }
+}
